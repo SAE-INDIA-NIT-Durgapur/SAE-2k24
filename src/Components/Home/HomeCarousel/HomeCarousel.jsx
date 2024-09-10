@@ -65,7 +65,7 @@ const HomeCarousel = () => {
                     loop
                     playsInline
                     preload="auto" 
-                    src="/Carvideo1.mp4"
+                    src="/Carvideo2.mp4"
                 ></video>
 
             </div>
