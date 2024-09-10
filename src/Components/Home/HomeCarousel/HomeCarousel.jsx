@@ -64,8 +64,10 @@ const HomeCarousel = () => {
                     muted
                     loop
                     playsInline
+                    preload="auto" 
                     src="/Carvideo.mp4"
                 ></video>
+
             </div>
 
 
