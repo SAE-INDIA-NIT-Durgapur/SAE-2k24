@@ -9,7 +9,7 @@ const HomeCarousel = () => {
       if (videoElement) {
         setTimeout(() => {
           videoElement.play();
-        }, 100);  // Small delay to ensure resources are loaded
+        }, 10);  // Small delay to ensure resources are loaded
       }
     }, []);
   
@@ -23,7 +23,7 @@ const HomeCarousel = () => {
           loop
           playsInline
           preload="auto"
-          src="/Carvideo2.mp4"
+          src="/Carvideo1.mp4"
         ></video>
       </div>
 
