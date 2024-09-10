@@ -13,21 +13,23 @@
 }
 
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1366px) {
   .homvideo-container {
-    height: 70vh;
-  }
+    height: auto;
+    min-height: 90vh;
+    max-height: 70vh; 
+}
 }
 
-@media (min-width: 1024px) and (max-width: 1366px) {
+/* @media (min-width: 1024px) and (max-width: 1366px) {
   .homvideo-container {
-    height: 80vh;
+    height: 40vh;
   }
-}
+} */
 
 @media (min-width: 600px) and (max-width: 768px) {
   .homvideo-container {
-    height: 65vh;
+    height: 90vh;
   }
 }
 
@@ -40,13 +42,9 @@
 
 @media (max-width: 480px) {
   .homvideo-container {
+    height: auto; 
+    min-height: 55vh; 
     width: 95vw;
     height: 68vw;
-  }
-
-  .homvideo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
   }
 }
