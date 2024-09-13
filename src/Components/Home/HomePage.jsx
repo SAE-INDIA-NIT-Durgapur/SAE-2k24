@@ -6,13 +6,15 @@ import { scroll, animate } from 'https://cdn.skypack.dev/motion@10.13.1';
 import './HomePage.css';
 import cloudAnimation from '../../Cloud.json';
 import engineAnimation from '../../Engine1.json';
-import ReactPlayer from 'react-player';
+
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { motion } from 'framer-motion'
 import TypeJs from './TypeJs/TypeJs';
 import FacultyAdvisors from './FacultyAdvisors/FacultyAdvisors';
 import HomeCarousel from './HomeCarousel/HomeCarousel'
+import Event from './Event/Event'
+import Cryptech from './Cryptech/Cryptech'
 
 AOS.init({
   duration: 500,
@@ -26,10 +28,7 @@ const HomePage = () => {
   return (
     <div className="home-container">
    <HomeCarousel/>
-    <section className="hommain">
-  
-     
-          
+    <section className="hommain"> 
           <div className="homheading">
             <h1 className='font-bold'>SAENITD</h1>
             <TypeJs />
@@ -126,149 +125,9 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="homevents-section data">
-        <div className="homhlo-sae" data-aos="fade-right">
-          <h1 className='font-bold'>Events</h1>
-        </div>
-      </section>
-      <section className='homevents-section-data px-6'>
-        <div id="homcontainer-fluid">
-          <div className="homevent-content">
-            <div className="homfist-image ">
-              <img className='pt-14 flex justify-center items-center'
-                src="https://github.com/Suke2004/Birthday-django-/blob/main/IMG-20240821-WA0048.jpg?raw=true"
-                alt="Image"
-                data-aos="fade-right"
-              />
-            </div>
-            <div className="homabout-fist" data-aos="fade-up-left">
-              <h1 data-aos="fade-right">F.I.S.T</h1>
-              <p>
-                Team SAE-NITD's "Forum for Ideas on Science and Technology" (F.I.S.T.) fosters a research-oriented culture through webinars and workshops on advanced topics like generative AI. By inviting experts, FIST bridges knowledge gaps, stimulates innovation, and empowers students to develop technology-driven solutions to real-world challenges.
-              </p>
-            </div>
-          </div>
-        </div>
+    <Event/>
 
-        <div id="homcontainer-fluid">
-          <div className="homevent-content">
-
-            <div className="homabout-baja" >
-              <h1 data-aos="fade-left">BAJA SAEINDIA</h1>
-              <p data-aos="fade-up-right">Baja SAEINDIA is a national event where university students design, build, and compete with off-road vehicles, promoting collaboration and engineering excellence.
-                NIT Durgapur's Team NDORS, comprising 25 students, achieved 38th position nationwide and 7th position among IITs and NITs. </p>
-            </div>
-
-            <div className="hombaja-image">
-              <img
-                src="https://saenitdgp-self.vercel.app/static/media/fullvehicle.72e6f860c848885980de.png"
-                alt="Image"
-                data-aos="fade-left"
-              />
-            </div>
-
-          </div>
-        </div>
-
-        <div id="homcontainer-fluid">
-          <div className="homevent-content">
-            <div className="homaiml-image">
-              <img className='pt-6 flex justify-center items-center'
-                src="https://github.com/Suke2004/Birthday-django-/blob/main/IMG-20240821-WA0076.jpg?raw=true"
-                alt="Image"
-                data-aos="fade-right"
-              />
-            </div>
-            <div className="homabout-aiml" >
-              <h1 data-aos="fade-right">AI ML Workshop</h1>
-              <p data-aos="fade-up-left">The workshop offers participants practical experience with AI and ML technologies, focusing on CNNs and deep learning models, to tackle real-world challenges and acquire hands-on expertise in designing neural network architectures and understanding their contemporary applications.</p>
-            </div>
-
-          </div>
-        </div>
-
-      </section>
-
-      <section className="homytr">
-        <div className="homyt-sae " >
-          <h1 className='pt-16'>Cryptech</h1>
-        </div>
-      </section>
-      <section className="homvid">
-        <div className="homvideo-container">
-          <ReactPlayer
-            className="homreact-player"
-            controls
-            url="https://youtu.be/XhYBorFI3Tg?si=aueHXYsFgZ3YdMn9"
-            width="100%"
-            height="100%"
-          />
-        </div>
-      </section>
-
-      <section>
-
-        <div className="homslider-container">
-          <div className="homslider">
-            <div className="homslide-track">
-              <div className="homslide">
-                <iframe width="240" height="200" src="https://www.youtube.com/embed/j_6sNtASHgU?si=IbQz4KJwbiowu9wI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <div className="homslide">
-                <iframe width="240" height="200" src="https://www.youtube.com/embed/o7fcf5chrTo?si=-o2btWUyjNVbmeHo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <div className="homslide">
-                <iframe width="240" height="200" src="https://www.youtube.com/embed/JrXKyNwJAvQ?si=hUynYrzmMYso9Vkm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <div className="homslide">
-                <iframe width="240" height="200" src="https://www.youtube.com/embed/-C2yRvTJ7Ss?si=94ToXJICUr0Gzd18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <div className="homslide">
-                <iframe width="240" height="200" src="https://www.youtube.com/embed/wjw50oAJZao?si=PSfbh5MKMTMmwg53" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <div className="homslide">
-                <iframe width="240" height="200" src="https://www.youtube.com/embed/h_Qjiqtd3Vw?si=ffcTkgdxLCigK4mM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <div className="homslide">
-                <iframe width="240" height="200" src="https://www.youtube.com/embed/P1XK8_ZumVI?si=PjX1PZu-sqwigzPv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <div className="homslide">
-                <iframe width="240" height="200" src="https://www.youtube.com/embed/1W2jI4JDNtE?si=71nlATzes1F1m8EW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <div className="homslide">
-                <iframe width="240" height="200" src="https://www.youtube.com/embed/aTdqZOGJPDw?si=Ph8zi2VgDnVJd9GO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <div className="homslide">
-                <iframe width="240" height="200" src="https://www.youtube.com/embed/2rcmR7O06hc?si=ynJE29GVTJ6sxE0B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <div className="homslide">
-                <iframe width="240" height="200" src="https://www.youtube.com/embed/foSz511p7tE?si=Dl6vgwt15Q0ydxNa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <div className="homslide">
-                <iframe width="240" height="200" src="https://www.youtube.com/embed/WkhQnTcLZ8Q?si=UVJQE3bBsssoBVbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <div className="homslide">
-                <iframe width="240" height="200" src="https://www.youtube.com/embed/eaUhJIWH0oI?si=98LbB1BLy1P3aJyP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <div className="homslide">
-                <iframe width="240" height="200" src="https://www.youtube.com/embed/mcDlaE0yk-Q?si=OF_2FiYEYb0v-SGX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <div className="homslide">
-                <iframe width="240" height="200" src="https://www.youtube.com/embed/yXN0HLjVojg?si=nB0LUJHnz-lzlREC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <div className="homslide">
-                <iframe width="240" height="200" src="https://www.youtube.com/embed/E99fiTPv1-c?si=F4chPUxpZfEi6Xgm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <div className="homslide">
-                <iframe width="240" height="200" src="https://www.youtube.com/embed/EmUIaWFRwB4?si=JGK9MIJMyxjGpGc0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-              <div className="homslide">
-                <iframe width="200" height="200" src="https://www.youtube.com/embed/HgZD2Ud_5rM?si=jk0JwOEyaC0_bp2y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+<Cryptech/>
 
 
     </div>

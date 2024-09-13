@@ -1,0 +1,381 @@
+.homhlo-sae {
+    text-align: center;
+    max-width: 500%;
+    padding: 2em;
+  }
+  
+  .homhlo-sae h1 {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(235, 21, 21);
+    font-size: 3.5rem;
+    text-shadow:
+      1px 1px 0 rgb(0, 0, 0),
+      2px 2px 0 rgb(0, 0, 0),
+      2px 2px 0 rgb(148, 31, 31),
+      4px 4px 0 rgb(0, 0, 0),
+      5px 5px 0 rgb(0, 0, 0);
+    position: relative;
+  }
+  .homhlo-sae h1::before {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: #000;
+    z-index: -1;
+    text-shadow: none;
+  }
+  #homcontainer-fluid {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  .homevent-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+  }
+  .homevent-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  @media (max-width: 768px) {
+    .homevent-content {
+      flex-direction: column;
+    }
+  
+    .homfist-image {
+      order: 2;
+    }
+  
+    .homabout-fist {
+      order: 1;
+    }
+  }
+  @media (max-width: 768px) {
+    .homevent-content {
+      flex-direction: column;
+    }
+  
+    .homaiml-image {
+      order: 2;
+    }
+  
+    .homabout-aiml {
+      order: 1;
+    }
+  }
+  @media (max-width: 480px) {
+
+    .homevent-content {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .homabout-aiml {
+      max-width: 100%;
+      margin: 1em;
+      text-align: center;
+    }
+  
+    .homabout-aiml h1 {
+      font-size: 30px;
+      font-weight: 900;
+      text-shadow: none;
+    }
+  
+    .homabout-aiml p {
+      margin: 2px 110px;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+  }
+  @media (max-width: 480px) {
+
+    .homevent-content {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .homabout-baja {
+      max-width: 100%;
+      margin: 1em;
+      text-align: center;
+    }
+  
+    .homabout-baja h1 {
+      font-weight: 900;
+      font-size: 30px;
+      text-shadow: none;
+    }
+  
+    .homabout-baja p {
+      margin: 2px 110px;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+  }
+  @media (max-width: 768px) {
+
+    .homabout {
+      flex-direction: column;
+    }
+  
+    .homevent-content {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .homabout-fist {
+      max-width: 100%;
+      margin: 1em;
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+    .homabout-fist h1 {
+      font-weight: 900;
+      font-size: 30px;
+      text-shadow: none;
+    }
+  
+    .homabout-fist p {
+      margin: 2px 110px;
+      font-size: 18px;
+      line-height: 1.4;
+  
+    }
+  }      
+  .homabout-fist {
+    text-align: left;
+    max-width: 50%;
+   
+  }
+  
+  .homabout-fist h1 {
+    margin: 20px;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(235, 8, 8);
+    font-size: 36px;
+    text-shadow:
+      1px 1px 0 rgb(0, 0, 0),
+      2px 2px 0 rgb(0, 0, 0),
+      2px 2px 0 rgb(211, 21, 21),
+      4px 4px 0 rgb(0, 0, 0),
+      5px 5px 0 rgb(0, 0, 0);
+    position: relative;
+  }
+  
+  
+  
+  .homfist-image {
+    order: 1;
+  }
+  
+  .homabout-fist {
+    order: 2;
+  }
+  
+  
+  
+  
+  .homabout-fist h1::before {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: #000;
+    z-index: -1;
+    text-shadow: none;
+  }
+  
+  
+  .homabout-fist p {
+    margin: 20px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    line-height: 1.5;
+    color: #b8bec4;
+  
+  }
+  
+  .homfist-image {
+    height: 550px auto;
+    width: 450px;
+  }
+  
+  .homfist-image img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .homfist-image {
+      text-align: center;
+    }
+  
+    .homfist-image img {
+      width: 73%;
+      height: auto;
+    }
+  }
+  @media (max-width: 1280px) {
+    .homaiml-image img{
+      width: auto;
+      padding: 30px;
+    }
+    .homfist-image img {
+      width: auto;
+      padding: 30px;
+    }
+  
+  }
+  .homabout-baja {
+    text-align: left;
+    max-width: 50%;
+    margin: 2em;
+  }
+  
+  .homabout-baja h1 {
+    margin: 20px;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(235, 8, 8);
+    font-size: 36px;
+    text-shadow:
+      1px 1px 0 rgb(0, 0, 0),
+      2px 2px 0 rgb(0, 0, 0),
+      2px 2px 0 rgb(211, 21, 21),
+      4px 4px 0 rgb(0, 0, 0),
+      5px 5px 0 rgb(0, 0, 0);
+    position: relative;
+  }
+  
+  .homabout-baja h1::before {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: #000;
+    z-index: -1;
+    text-shadow: none;
+  }
+  
+  
+  .homabout-baja p {
+    margin: 20px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    line-height: 1.5;
+    color: #b8bec4;
+  
+  }
+  
+  
+  
+  .homabout-aiml {
+    text-align: left;
+    max-width: 50%;
+    margin: 2em;
+  }
+  
+  .homabout-aiml h1 {
+    margin: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    color: rgb(235, 8, 8);
+    font-size: 36px;
+    text-shadow:
+      1px 1px 0 rgb(0, 0, 0),
+      2px 2px 0 rgb(0, 0, 0),
+      2px 2px 0 rgb(211, 21, 21),
+      4px 4px 0 rgb(0, 0, 0),
+      5px 5px 0 rgb(0, 0, 0);
+  
+  }
+  
+  .homabout-aiml h1::before {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: #000;
+    z-index: -1;
+    text-shadow: none;
+  }
+  
+  
+  .homabout-aiml p {
+    margin: 20px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    line-height: 1.5;
+    color: #b8bec4;
+  
+  }
+  
+  
+
+  .hombaja-image {
+    height: 400px;
+    width: 540px;
+  
+  }
+  
+  .hombaja-image img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .hombaja-image {
+      text-align: center;
+    }
+  
+    .hombaja-image img {
+      width: 73%;
+      height: auto;
+    }
+  }
+
+  .homaiml-image {
+    order: 1;
+  }
+  
+  .homabout-aiml {
+    order: 2;
+  }
+  
+  
+  
+  .homaiml-image {
+    height: 400px auto;
+    width: 450px;
+  
+  }
+  
+  .homaiml-image img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 480px) {
+    .homaiml-image {
+      text-align: center;
+    }
+  
+    .homaiml-image img {
+      width: 73%;
+      height: auto;
+    }
+  }
+  
+      
