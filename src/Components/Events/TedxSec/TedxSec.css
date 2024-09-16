@@ -155,4 +155,29 @@
       height: 400px;
     }
   }
-  
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .TedxSec-heading {
+    font-size: 2.4rem; 
+  }
+
+  .TedxSec-paragraph {
+    font-size: 1.2rem; 
+  }
+
+  .TedxSec-cards {
+    gap: 20px; 
+    flex-direction: row; 
+  }
+
+  .TedxSec-card {
+    width: 250px; 
+    height: 350px; 
+  }
+
+  .TedxSec-card img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+  }
+}
