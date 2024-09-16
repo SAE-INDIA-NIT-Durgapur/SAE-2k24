@@ -15,6 +15,7 @@ import FacultyAdvisors from './FacultyAdvisors/FacultyAdvisors';
 import HomeCarousel from './HomeCarousel/HomeCarousel'
 import Event from './Event/Event'
 import Cryptech from './Cryptech/Cryptech'
+import HomCard from './Card/HomCard'
 
 AOS.init({
   duration: 500,
@@ -48,56 +49,7 @@ const HomePage = () => {
             </p>
           </div>
 
-          <div className="homcard-container" max-auto>
-
-<div className="homcard-aar" data-aos="fade-right">
-  <div className="homwrapper">
-    <img
-      src="https://github.com/Suke2004/Birthday-django-/blob/main/aarohan_2.jpg?raw=true"
-      className="homcover-image-aarohan"
-      alt="Aarohan"
-    />
-  </div>
-  
-  <img
-    src="https://i.ibb.co/7j61wMw/aarohan.jpg"
-    className="homcharacter-aar"
-    alt="Dark Rider Character"
-  />
-</div>
-
-<div className="homcard-sdv" data-aos="fade-up">
-  <div className="homwrapper">
-    <img
-      src="https://github.com/Suke2004/Birthday-django-/blob/main/IMG-20240907-WA0000.jpg?raw=true"
-      className="homcover-image-sdv"
-      alt="Force Mage Cover"
-    />
-  </div>
-  <img
-    src="https://github.com/Suke2004/Birthday-django-/blob/main/bot.png?raw=true"
-    className="homcharacter"
-    alt="Force Mage Character"
-  />
-</div>
-
-<div className="homcard-tedx" data-aos="fade-left">
-  <div className="homwrapper">
-    <img
-      src="https://i.ibb.co/DYqwXcc/Whats-App-Image-2024-08-21-at-23-51-44-c685cd62.jpg"
-      className="homcover-image-tedx"
-      alt="Force Mage Cover"
-    />
-  </div>
-
-  <img
-    src="https://i.ibb.co/7CK09nR/Whats-App-Image-2024-08-21-at-23-50-49-9d4f2cd5.jpg"
-    className="homcharacter"
-    alt="Force Mage Character"
-  />
-</div>
-
-</div>
+    <HomCard/>
 
 </div>
 </section>

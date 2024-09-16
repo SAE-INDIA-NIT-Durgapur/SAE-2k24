@@ -1,0 +1,282 @@
+.homcard-container {
+    margin-top: 100px;
+    display: flex;
+    margin-bottom: 30px;
+  }
+  @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    .homcard-container {
+      flex-direction: row;
+      align-items: center;
+      margin: 70px 5px 0px 5px;
+    }
+  
+    .homcard-aar,
+    .homcard-sdv,
+    .homcard-tedx {
+      max-width: 300px; /* Increase the card width */
+      height: 400px; /* Increase the card height */
+      margin-bottom: 20px;
+  
+    }
+  
+    .homcover-image-aarohan,
+    .homcover-image-sdv,
+    .homcover-image-tedx {
+      width: 100%;
+      height: 100%;
+  
+    }
+  
+    .homcharacter-aar,
+    .homcharacter {
+      width: 80%; /* Reduce character size for better visibility */
+    }
+  }
+  /* Google Nest Hub (7-inch screen) */
+@media screen and (max-width: 1024px) {
+    .homcard-container {
+      flex-direction: row;
+      align-items: center;
+      margin: 60px 5px 0px 5px;
+    }
+  
+    .homcard-aar,
+    .homcard-sdv,
+    .homcard-tedx {
+      max-width: 230px; /* Slightly increase card size for better visibility */
+      height: 290px auto;
+      margin: 0px 20px;
+      margin-bottom: 15px;
+    }
+  
+    .homcover-image-aarohan,
+    .homcover-image-sdv,
+    .homcover-image-tedx {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* Ensures the image is fully visible */
+    }
+  
+    .homcharacter-aar,
+    .homcharacter {
+      width: 80%; /* Adjust the character size */
+    }
+  }
+/* For tablets and larger mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .homcard-container {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 60px;
+      margin-bottom: 20px;
+    }
+  
+    .homcard-aar,
+    .homcard-sdv,
+    .homcard-tedx {
+      max-width: 280px;
+      height: 300px auto;
+      margin: 20px 0;
+    }
+  
+    .homcover-image-aarohan,
+    .homcover-image-sdv,
+    .homcover-image-tedx {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  
+  /* For smaller mobile devices (max-width: 480px) */
+  @media (max-width: 480px) {
+    .homcard-container {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 100px;
+      margin-bottom: 15px;
+    }
+  
+    .homcard-aar,
+    .homcard-sdv,
+    .homcard-tedx {
+      width: 250px;
+      height: 350px;
+      margin: 40px 0;
+      padding: 0 20px;
+    }
+  
+    .homcover-image-aarohan,
+    .homcover-image-sdv,
+    .homcover-image-tedx {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  
+    .homcharacter-aar,
+    .homcharacter {
+      width: 90%; /* Reduce the size of the character images on small screens */
+    }
+  }
+  /* For very small devices (max-width: 320px) */
+@media (max-width: 320px) {
+    .homcard-container {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+  
+    .homcard-aar,
+    .homcard-sdv,
+    .homcard-tedx {
+      width: 120px;
+      height: 180px;
+      margin: 10px 0;
+      padding: 0 10px;
+    }
+  
+    .homcover-image-aarohan,
+    .homcover-image-sdv,
+    .homcover-image-tedx {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  
+    .homcharacter-aar,
+    .homcharacter {
+      width: 85%; /* Further reduce the size for very small screens */
+    }
+  }
+  .homcard-aar,
+  .homcard-sdv,
+  .homcard-tedx {
+    width: var(--card-width);
+    height: var(--card-height);
+    width: 250px;
+    height: 350px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 36px;
+    perspective: 2500px;
+    margin: 0 50px;
+  }
+  .homcard-aar:hover .homwrapper,
+  .homcard-sdv:hover .homwrapper ,
+  .homcard-tedx:hover .homwrapper  {
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  }
+  .homcard-aar:hover .homwrapper::before,
+  .homwrapper::after,
+  .homcard-sdv:hover .homwrapper::before,
+  .homwrapper::after,
+  .homcard-tedx:hover .homwrapper::before,
+  .homwrapper::after {
+    opacity: 1;
+  }
+  
+  .homcard-aar:hover .homwrapper::after,
+  .homcard-sdv:hover .homwrapper::after,
+  .homcard-tedx:hover .homwrapper::after {
+    height: 120px;
+  }
+  .homcard-aar:hover .homcharacter-aar,
+.homcard-sdv:hover .homcharacter,
+.homcard-tedx:hover .homcharacter {
+  opacity: 1;
+  transform: translate3d(0%, -30%, 100px);
+}
+.homcharacter-aar {
+    width: 85%;
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    z-index: -1;
+  
+  }
+  .homcharacter {
+    width: 128%;
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    z-index: -1;
+  }
+  .homcharacter {
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    z-index: -1;
+  }
+
+
+
+  .homcover-image-aarohan {
+    overflow: hidden; /* Optional: Hide overflow if needed */
+    position: relative; /* This can help to cover the parent container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .homcover-image-sdv {
+    width: 100vw;
+    height: 45vh; 
+    object-fit: contain; 
+    display: block; 
+  }
+  .homcover-image-tedx {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .homwrapper {
+    transition: all 0.5s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  
+  .homwrapper::before,
+  .homwrapper::after {
+    content: "";
+    opacity: 0;
+    width: 100%;
+    height: 80px;
+    transition: all 0.5s;
+    position: absolute;
+    left: 0;
+  }
+  
+  .homwrapper::before {
+    top: 0;
+    height: 100%;
+    background-image: linear-gradient(
+      to top,
+      transparent 46%,
+      rgba(12, 13, 19, 0.5) 68%,
+      rgba(12, 13, 19) 97%
+    );
+  }
+  
+  .homwrapper::after {
+    bottom: 0;
+    opacity: 1;
+    background-image: linear-gradient(
+      to bottom,
+      transparent 46%,
+      rgba(12, 13, 19, 0.5) 68%,
+      rgba(12, 13, 19) 97%
+    );
+  }
+    
