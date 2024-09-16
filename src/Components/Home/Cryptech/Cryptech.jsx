@@ -56,7 +56,7 @@ const Cryptech = () => {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
-                  loading="lazy" // Lazy load iframe
+                  loading="lazy"
                 />
               </div>
               <div className="homslide">
@@ -69,7 +69,7 @@ const Cryptech = () => {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
-                  loading="lazy" // Lazy load iframe
+                  loading="lazy" 
                 />
               </div>
               <div className="homslide">
@@ -82,10 +82,10 @@ const Cryptech = () => {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
-                  loading="lazy" // Lazy load iframe
+                  loading="lazy"
                 />
               </div>
-              {/* Repeat this pattern for the rest of the slides */}
+
               <div className="homslide">
                 <iframe
                   width="240"
@@ -96,7 +96,7 @@ const Cryptech = () => {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
-                  loading="lazy" // Lazy load iframe
+                  loading="lazy" 
                 />
               </div>
               <div className="homslide">
@@ -109,7 +109,7 @@ const Cryptech = () => {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
-                  loading="lazy" // Lazy load iframe
+                  loading="lazy" 
                 />
               </div>
               <div className="homslide">
@@ -122,7 +122,7 @@ const Cryptech = () => {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
-                  loading="lazy" // Lazy load iframe
+                  loading="lazy"
                 />
               </div>
               <div className="homslide">
@@ -135,7 +135,7 @@ const Cryptech = () => {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
-                  loading="lazy" // Lazy load iframe
+                  loading="lazy" 
                 />
               </div>
               <div className="homslide">
@@ -148,7 +148,7 @@ const Cryptech = () => {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
-                  loading="lazy" // Lazy load iframe
+                  loading="lazy" 
                 />
               </div>
             </div>

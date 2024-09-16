@@ -88,6 +88,12 @@
   height: 100%;
 }
 
+@media (max-width: 480px) {
+  .homvideo-container1 {
+    padding-top: 60%; /* Increase height for mobile devices */
+  }
+}
+
 .homslider-container {
   width: 100%;
   overflow: hidden;
@@ -107,7 +113,7 @@
 
 .homslide {
   min-width: 200px;
-  margin-right: 10px;
+  margin-right: 20px; /* Increased margin to add more gap */
   box-sizing: border-box;
 }
 
@@ -124,6 +130,7 @@
   .homslide {
     width: 20vw;
     height: 52vw;
+    margin-right: 10px; /* Adjust gap for smaller screens */
   }
 }
 
