@@ -1,6 +1,7 @@
 
 
 import React, { useEffect } from "react";
+import FacultyAdvisors from "../Home/FacultyAdvisors/FacultyAdvisors.jsx";
 import "./Teams.css";
 import { finalYear } from "./Assets/finalYear.js";
 import { thirdYear } from "./Assets/thirdYear.js";
@@ -67,8 +68,11 @@ const Teams = () => {
   }, []);
 
   return (
+    <>
+    <br/><br/>
+    <h1 className="teams-heading">Our Team</h1>
+    <FacultyAdvisors/>
     <div className="teams-page">
-      <h1 className="teams-heading">Our Team</h1>
 
       <section className="section">
         <h2 className="sub-heading">Office Bearers</h2>
@@ -88,6 +92,7 @@ const Teams = () => {
         <GridLayout members={secondYear} />
       </section>
     </div>
+    </>
   );
 };
 

@@ -1,49 +1,45 @@
-import React from 'react';
-import './FacultyAdvisors.css';
+import React from "react";
+import "./FacultyAdvisors.css";
 
-const FacultyAdvisors = () => {
-  const advisors = [
-    {
-      name: "Prof. Nilotpal Banerjee",
-      department: "Department of Mechanical Engineering",
-      imageClass: "homhi-photo-niloptal",
-      aos: "fade-right",
-    },
-    {
-      name: "Prof. Apurba Layek",
-      department: "Department of Mechanical Engineering",
-      imageClass: "homhi-photo-apurba",
-      aos: "fade-up",
-    },
-    {
-      name: "Prof. Tapas Kumar Saha",
-      department: "Department of Electrical Engineering",
-      imageClass: "homhi-photo-tapas",
-      aos: "fade-left",
-    },
-  ];
+const cards = [
+  {
+    name: "Prof. Nilotpal Banerjee",
+    department: "Department of Mechanical Engineering",
+    image: require("../images/niloptal1.jpeg"), // Use require for local images
+    aos: "fade-right",
+  },
+  {
+    name: "Prof. Apurba Layek",
+    department: "Department of Mechanical Engineering",
+    image: require("../images/apurba1.jpeg"),
+    aos: "fade-up",
+  },
+  {
+    name: "Prof. Tapas Kumar Saha",
+    department: "Department of Electrical Engineering",
+    image: require("../images/tapas1.jpeg"),
+    aos: "fade-left",
+  },
+];
 
+const CardSection = () => {
   return (
-    <section className="homprops">
-      <div id="testimonial-box" className="homcontainer1">
-        <div className="homprops-heading">
-          <h1 className="p-3 font-bold">Our Faculty Advisors</h1>
-        </div>
-        <div className="homhi-container">
-          {advisors.map((advisor, index) => (
-            <div className={`homhi`} data-aos={advisor.aos} key={index}>
-              <div className={advisor.imageClass}></div>
-              <div className="homhi-title">
-                {advisor.name}
-                <br />
-                <span>{advisor.department}</span>
-              </div>
+    <>
+    <br/>
+      <h2 className="section-heading">Our Faculty Advisors</h2>{" "}
+      <div className="faculty-card-section">
+        {cards.map((card, index) => (
+          <div className="faculty-card" key={index} data-aos={card.aos}>
+            <img src={card.image} alt={card.name} className="faculty-card-image" />
+            <div className="faculty-card-info">
+              <h3>{card.name}</h3>
+              <p>{card.department}</p>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
-    </section>
+    </>
   );
 };
 
-export default FacultyAdvisors;
+export default CardSection;

@@ -13,6 +13,7 @@ body {
 }
 
 .teams-heading {
+    text-align: center;
     font-size: 3rem;
     margin-bottom: 2rem;
     animation: fadeIn 2s ease-in-out;
@@ -37,7 +38,8 @@ body {
     grid-gap: 2rem;
     margin: 0 2rem;
     padding: 2rem 4rem;
-    margin-bottom: 2rem; /* Prevent overlapping on mobile */
+    margin-bottom: 2rem;
+    /* Prevent overlapping on mobile */
 }
 
 .grid-item {
@@ -207,7 +209,8 @@ body {
     .grid-container {
         grid-template-columns: 1fr;
         padding: 1rem;
-        margin-bottom: 1rem; /* Prevents overlapping with other sections */
+        margin-bottom: 1rem;
+        /* Prevents overlapping with other sections */
     }
 
     .card {
@@ -220,7 +223,8 @@ body {
     }
 
     .section {
-        padding: 1rem 0; /* Ensure sections have proper spacing */
+        padding: 1rem 0;
+        /* Ensure sections have proper spacing */
         opacity: 1;
         visibility: visible;
         height: auto;

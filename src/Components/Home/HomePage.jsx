@@ -11,7 +11,6 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 // import { motion } from 'framer-motion'
 import TypeJs from './TypeJs/TypeJs';
-import FacultyAdvisors from './FacultyAdvisors/FacultyAdvisors';
 import HomeCarousel from './HomeCarousel/HomeCarousel'
 import Event from './Event/Event'
 import Cryptech from './Cryptech/Cryptech'
@@ -54,7 +53,7 @@ const HomePage = () => {
 </div>
 </section>
      
-      <FacultyAdvisors/>
+      
 
       <section className="homabout">
         <div id="homcontainer-fluid">
