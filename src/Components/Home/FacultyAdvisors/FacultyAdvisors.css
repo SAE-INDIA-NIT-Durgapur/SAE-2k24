@@ -1,47 +1,43 @@
 .faculty-card-section {
-  padding-top:12rem;
+  padding-top: 4rem;
+  /* Reduced top padding */
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(21,23,26);
-  padding: 40px;
+  background: rgb(21, 23, 26);
+  padding: 30px;
   border-radius: 10px;
   flex-wrap: wrap;
-  padding-left: 50px;
-  padding-right: 50px;
-  /* Allow cards to wrap on smaller screens */
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .faculty-card {
   position: relative;
   width: 250px;
   height: 250px;
-  margin: 30px;
+  margin: 30px 50px;
+  /* Increased horizontal spacing between cards */
   border-radius: 50%;
-  /* Circular shape */
   overflow: hidden;
-  transition: transform 0.5s ease, box-shadow 0.3s ease;
-  /* Added box-shadow transition for depth effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .faculty-card:hover {
   transform: scale(1.05);
-  /* Scale slightly larger */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  /* Optional: Adds a shadow effect on hover */
 }
 
 .faculty-card-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: filter 0.3s ease;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .faculty-card:hover .faculty-card-image {
   filter: blur(0.5px);
-  scale: 1.2;
-  transition:smooth;
+  transform: scale(1.2);
 }
 
 .faculty-card-info {
@@ -50,9 +46,9 @@
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.7);
-  color: red;
+  color: #ff4c4c;
   text-align: center;
-  padding: 15px;
+  padding: 10px;
   opacity: 0;
   transition: opacity 0.3s ease;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
@@ -64,19 +60,70 @@
 
 h3 {
   margin: 0;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 p {
   margin: 5px 0 0;
-  font-size: 0.9em;
+  font-size: 0.85em;
+}
+
+/* Updated heading style with smaller underline and fade-in animation */
+.section-heading {
+  text-align: center;
+  color: #ff4c4c;
+  margin-bottom: 1.5rem;
+  font-size: 2.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Smaller underline effect directly below text */
+.section-heading::after {
+  content: '';
+  position: absolute;
+  width: 30%;
+  /* Smaller underline width */
+  height: 2px;
+  background-color: #ff4c4c;
+  bottom: -5px;
+  left: 35%;
+  /* Center the smaller underline */
+  animation: underlineExpand 0.8s ease-in-out;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes underlineExpand {
+  0% {
+    width: 0;
+    left: 50%;
+  }
+
+  100% {
+    width: 30%;
+    left: 35%;
+  }
 }
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
   .faculty-card {
     width: 200px;
-    /* Adjusted card size for smaller screens */
     height: 200px;
   }
 }
@@ -84,31 +131,19 @@ p {
 @media (max-width: 480px) {
   .faculty-card {
     width: 150px;
-    /* Further adjusted card size for very small screens */
     height: 150px;
-    margin: 20px;
-    /* Adjusted margin for smaller screens */
+    margin: 15px;
   }
 
   h3 {
     font-size: 1.2em;
-    /* Adjusted font size for smaller screens */
   }
 
   p {
     font-size: 0.8em;
-    /* Adjusted font size for smaller screens */
   }
-}
-.section-heading {
-  text-align: center;
-  /* Center the heading */
-  color: red;
-  /* Same shade of red as the card info */
-  margin-bottom: 20px;
-  /* Space between heading and cards */
-  font-size: 2em;
-  /* Adjust font size as needed */
-  font-weight: bold;
-  /* Make the font bold */
+
+  .section-heading {
+    font-size: 2em;
+  }
 }
