@@ -1,115 +1,51 @@
 .homcard-container {
   display: flex;
   justify-content: center;
-  gap: 100px;
-  /* Increased gap between cards */
-  margin: 50px 0;
-  overflow: hidden;
-  /* Prevent overflow of elements */
+  gap: 90px;
+  margin-top: 70px;
+  flex-wrap: wrap;
 }
 
 .homcard {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  /* To hide overflowing content */
   position: relative;
-  /* For absolute positioning of the border animation */
   border-radius: 20px;
-  /* Fully rounded corners */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  /* Subtle shadow for depth */
-  width: 300px;
-  /* Increased width of the card */
-  height: 300px;
-  /* Increased height of the card */
-  transition: transform 0.3s ease;
-  /* Smooth scaling effect on hover */
+  width: 250px;
+  height: 250px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  border: 2px solid transparent; 
 }
 
-/* Image styling */
 .homimage {
   width: 100%;
-  /* Image takes full width of the card */
   height: 100%;
-  /* Image takes full height of the card */
-  border-radius: 20px;
-  /* Fully rounded corners for the image */
+  border-radius: 18px; 
   transition: transform 0.3s ease;
-  /* Smooth scaling effect */
 }
 
-/* Hover effect for card */
 .homcard:hover {
   transform: translateY(-5px);
-  border: 2px solid rgb(166, 22, 22);
-  /* Slightly lift the card on hover */
+  border-color: red; 
 }
 
-/* Hover effect for image */
 .homcard:hover .homimage {
   transform: scale(1.05);
   cursor: pointer;
-  /* Slightly enlarge the image on hover */
 }
 
-/* Animated red border effect */
-.homcard::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  /* Adjusted to position the border correctly */
-  left: 0;
-  /* Adjusted to position the border correctly */
-  right: 0;
-  /* Adjusted to position the border correctly */
-  bottom: 0;
-  /* Adjusted to position the border correctly */
-  border-radius: 20px;
-  /* Fully rounded corners for the border */
-  border: 6px solid transparent;
-  /* Start with transparent border */
-  z-index: -1;
-  /* Place it behind the image */
-  transition: border-color 0.3s ease;
-  /* Smooth transition for border color */
-}
-
-/* Change border color on hover */
-.homcard:hover::before {
-  border-color: red;
-  /* Change border to red on hover */
-}
-
-/* Keyframes for border animation (optional) */
-@keyframes borderAnimation {
-  0% {
-    opacity: 0.5;
-    /* Fade in */
-    transform: scale(1);
-    /* Start at normal scale */
-  }
-
-  100% {
-    opacity: 1;
-    /* Fully visible */
-    transform: scale(1.1);
-    /* Scale up slightly */
+@media (max-width: 768px) {
+  .homcard {
+    width: 200px;
+    height: 200px;
   }
 }
 
-/* Loading animation */
-@keyframes loadingAnimation {
-
-  0%,
-  100% {
-    opacity: 1;
-    /* Fully visible */
-  }
-
-  50% {
-    opacity: 0.8;
-    /* Slightly faded */
+@media (max-width: 480px) {
+  .homcard {
+    width: 150px;
+    height: 150px;
   }
 }
