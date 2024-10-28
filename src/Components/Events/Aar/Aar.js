@@ -10,16 +10,15 @@ import roboliga from './roboliga.jpg';
 import './Aar.css';
 
 const cardData = [
-  { id: 1, image: bidwit, description: 'Bidwit' },
-  { id: 2, image: carauc, description: 'Car Auction' },
-  { id: 3, image: crossword, description: 'Crossword' },
-  { id: 4, image: DN, description: 'Death Note' },
-  { id: 5, image: electra, description: 'Electra' },
-  { id: 6, image: fluav , description: 'Flying the UAV' },
-  { id: 7, image: rasp , description: 'Data Science with Raspberry Pi' },
-  { id: 8, image: roboliga, description: 'Roboliga' },
+  { id: 1, image: bidwit },
+  { id: 2, image: carauc },
+  { id: 3, image: crossword },
+  { id: 4, image: DN },
+  { id: 5, image: electra },
+  { id: 6, image: fluav },
+  { id: 7, image: rasp },
+  { id: 8, image: roboliga },
 ];
-
 
 const Aar = () => {
   const [headingInView, setHeadingInView] = useState(false);
@@ -84,11 +83,7 @@ const Aar = () => {
       >
         {cardData.map((card) => (
           <div key={card.id} className="aar-card">
-            <div ></div>
-            <img src={card.image} alt={`Card ${card.id}`} />
-            <div className="aar-card-overlay">
-              <p className="aar-overlay-text">{card.description}</p>
-            </div>
+            <img src={card.image} alt={`Card ${card.id}`} className="aar-card-image" />
           </div>
         ))}
       </div>

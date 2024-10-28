@@ -1,5 +1,5 @@
-import React, { useEffect, useState, useRef } from 'react';
-import './HomeCarousel.css'
+import React, { useEffect, useState, useRef } from "react";
+import "./HomeCarousel.css";
 
 const HomeCarousel = () => {
   const videoRef = useRef(null);
@@ -9,12 +9,11 @@ const HomeCarousel = () => {
     if (videoElement) {
       setTimeout(() => {
         videoElement.play();
-      }, 100);  // Small delay to ensure resources are loaded
+      }, 100); // Small delay to ensure resources are loaded
     }
   }, []);
 
   return (
-
     <div className="homvideo-container">
       <video
         ref={videoRef}
@@ -25,10 +24,8 @@ const HomeCarousel = () => {
         preload="metadata"
         src="/Carvideo1.mp4"
       ></video>
-
     </div>
+  );
+};
 
-  )
-}
-
-export default HomeCarousel
+export default HomeCarousel;

@@ -1,6 +1,5 @@
 .faculty-card-section {
   padding-top: 4rem;
-  /* Reduced top padding */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +16,6 @@
   width: 250px;
   height: 250px;
   margin: 30px 50px;
-  /* Increased horizontal spacing between cards */
   border-radius: 50%;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -37,7 +35,8 @@
 
 .faculty-card:hover .faculty-card-image {
   filter: blur(0.5px);
-  transform: scale(1.2);
+  transform: scale(1.1);
+  cursor:pointer;
 }
 
 .faculty-card-info {
@@ -58,44 +57,42 @@
   opacity: 1;
 }
 
-h3 {
-  margin: 0;
-  font-size: 1.4em;
+.faculty-card-info:hover{
+  cursor: pointer;
 }
 
-p {
-  margin: 5px 0 0;
-  font-size: 0.85em;
+.faculty-card-info h3,
+.faculty-card-info p {
+  transition: font-size 0.3s ease;
 }
 
-/* Updated heading style with smaller underline and fade-in animation */
+.faculty-card:hover .faculty-card-info h3,
+.faculty-card:hover .faculty-card-info p {
+  font-size: 0.9em;
+}
+
 .section-heading {
   text-align: center;
   color: #ff4c4c;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   font-size: 2.5em;
   font-weight: bold;
   text-transform: uppercase;
   font-family: 'Arial', sans-serif;
   position: relative;
-  animation: fadeIn 1s ease-in-out;
+  animation: fadeIn 1s ease-in-out, headingAnimation 1s ease forwards;
 }
 
-/* Smaller underline effect directly below text */
-.section-heading::after {
-  content: '';
-  position: absolute;
-  width: 30%;
-  /* Smaller underline width */
+.section-underline {
   height: 2px;
   background-color: #ff4c4c;
-  bottom: -5px;
-  left: 35%;
-  /* Center the smaller underline */
-  animation: underlineExpand 0.8s ease-in-out;
+  border: none;
+  transition: width 0.3s ease;
+  width: 0;
+  margin: 0 auto;
+  animation: underlineExpand 0.5s ease forwards;
 }
 
-/* Animation keyframes */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -105,6 +102,20 @@ p {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes headingAnimation {
+  0% {
+    transform: scale(1.1);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
   }
 }
 
@@ -120,7 +131,6 @@ p {
   }
 }
 
-/* Media queries for responsiveness */
 @media (max-width: 768px) {
   .faculty-card {
     width: 200px;

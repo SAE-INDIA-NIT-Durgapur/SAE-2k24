@@ -39,7 +39,7 @@
 
 .aar-cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     opacity: 0;
     transform: translateY(50px);
@@ -55,49 +55,34 @@
 
 .aar-card {
     position: relative;
-    width: 100%;
-    height: 100%;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    /* Glassmorphism effect */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
     cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+    /* Pointer cursor for interactivity */
 }
 
 .aar-card:hover {
     transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
 }
 
-.aar-card img {
+.aar-card-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: transform 0.5s ease, filter 0.5s ease;
 }
 
-.aar-card-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.aar-card:hover .aar-card-overlay {
-    opacity: 1;
-}
-
-.aar-overlay-text {
-    font-size: 1.5rem;
-    text-align: center;
+.aar-card:hover .aar-card-image {
+    transform: scale(1.1);
+    filter: brightness(0.9);
+    /* Darken image on hover */
 }
 
 .aar-animated-line {
@@ -113,11 +98,11 @@
     0% {
         background-position: 0% 0%;
     }
+
     100% {
         background-position: 100% 0%;
     }
 }
-
 
 @media (max-width: 768px) {
     .aar-heading {
@@ -129,26 +114,20 @@
     }
 
     .aar-cards {
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 375px) {
     .aar-heading {
-        font-size: 2.6rem;
+        font-size: 2.4rem;
     }
 
     .aar-paragraph {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .aar-cards {
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(1, 1fr);
     }
-
-    .aar-overlay-text {
-        font-size: 1.2rem;
-        text-align: center;
-    }
-    
 }

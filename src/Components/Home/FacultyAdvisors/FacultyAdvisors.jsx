@@ -5,7 +5,7 @@ const cards = [
   {
     name: "Prof. Nilotpal Banerjee",
     department: "Department of Mechanical Engineering",
-    image: require("../images/niloptal1.jpeg"), // Use require for local images
+    image: require("../images/niloptal1.jpeg"),
     aos: "fade-right",
   },
   {
@@ -25,12 +25,17 @@ const cards = [
 const CardSection = () => {
   return (
     <>
-    <br/>
-      <h2 className="section-heading">Our Faculty Advisors</h2>{" "}
+      <br />
+      <h2 className="section-heading">Our Faculty Advisors</h2>
+      <hr className="section-underline" />
       <div className="faculty-card-section">
         {cards.map((card, index) => (
           <div className="faculty-card" key={index} data-aos={card.aos}>
-            <img src={card.image} alt={card.name} className="faculty-card-image" />
+            <img
+              src={card.image}
+              alt={card.name}
+              className="faculty-card-image"
+            />
             <div className="faculty-card-info">
               <h3>{card.name}</h3>
               <p>{card.department}</p>

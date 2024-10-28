@@ -1,4 +1,3 @@
-
 import React from 'react';
 import './Organisers.css';
 
@@ -29,16 +28,14 @@ const Organisers = () => {
     { name: 'Shruti Sharma', imgSrc: 'https://live.staticflickr.com/65535/52770812484_b2e8ae8b60_w.jpg' },
     { name: 'Sankalp Mohanty', imgSrc: 'https://live.staticflickr.com/65535/52771494461_96e011d3ab_w.jpg' },
     { name: 'K. Deekshita', imgSrc: 'https://live.staticflickr.com/65535/52771983018_12d616e1b2_n.jpg' },
-   
-    
   ];
 
-    return (
-    <div className="ted-organisers-container ">
+  return (
+    <div className="ted-organisers-container">
       {organisers.map((organiser, index) => (
         <div
           key={index}
-          className={`ted-image-card font-bold text-xl justify-center  ${
+          className={`ted-image-card font-bold text-xl justify-center ${
             index === organisers.length - 1 ? 'last-card' : ''
           }`}
           data-name={organiser.name}
