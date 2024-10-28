@@ -55,6 +55,13 @@ export const secondYear = [
         "linkedinLink": "https://www.linkedin.com/in/dibya-ranjan-nayak-35a2b92b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
+        "url": require('../Assets/2ndYearImg/Shubham Roy.jpg'),
+        "name": "Shubham Roy",
+        "position": "Junior Coordinator",
+        "instaLink": "https://www.instagram.com/shubhamaaay1?r=nametag",
+        "linkedinLink": "https://www.linkedin.com/in/shubham-roy-428080273",
+    },
+    {
         "url": require('../Assets/2ndYearImg/Dibyendu Majhi .jpg'),
         "name": "Dibyendu Majhi",
         "position": "Junior Coordinator",
@@ -200,13 +207,7 @@ export const secondYear = [
         "instaLink": "https://www.instagram.com/shresth_jha_815?r=nametag",
         "linkedinLink": "https://www.linkedin.com/in/shresth-kamal-jha-74b893281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
-    {
-        "url": require('../Assets/2ndYearImg/Shubham Roy.jpg'),
-        "name": "Shubham Roy",
-        "position": "Junior Coordinator",
-        "instaLink": "https://www.instagram.com/shubhamaaay1?r=nametag",
-        "linkedinLink": "https://www.linkedin.com/in/shubham-roy-428080273",
-    },
+
 
     {
         "url": require('../Assets/2ndYearImg/Heeth_Bhandari.jpg'),

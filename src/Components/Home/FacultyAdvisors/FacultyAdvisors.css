@@ -7,15 +7,13 @@
   padding: 30px;
   border-radius: 10px;
   flex-wrap: wrap;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .faculty-card {
   position: relative;
   width: 250px;
   height: 250px;
-  margin: 30px 50px;
+  margin: 30px; /* Simplified margin */
   border-radius: 50%;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -36,7 +34,7 @@
 .faculty-card:hover .faculty-card-image {
   filter: blur(0.5px);
   transform: scale(1.1);
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .faculty-card-info {
@@ -48,16 +46,16 @@
   color: #ff4c4c;
   text-align: center;
   padding: 10px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  opacity: 0; /* Hide text by default */
+  transition: opacity 0.3s ease; /* Transition for smooth effect */
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 }
 
 .faculty-card:hover .faculty-card-info {
-  opacity: 1;
+  opacity: 1; /* Show text on hover */
 }
 
-.faculty-card-info:hover{
+.faculty-card-info:hover {
   cursor: pointer;
 }
 
@@ -69,6 +67,12 @@
 .faculty-card:hover .faculty-card-info h3,
 .faculty-card:hover .faculty-card-info p {
   font-size: 0.9em;
+}
+@media (max-width: 500px) {
+  .faculty-card:hover .faculty-card-info h3,
+.faculty-card:hover .faculty-card-info p {
+  font-size: 0.7em; 
+}
 }
 
 .section-heading {
@@ -98,7 +102,6 @@
     opacity: 0;
     transform: translateY(10px);
   }
-
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -109,11 +112,9 @@
   0% {
     transform: scale(1.1);
   }
-
   50% {
     transform: scale(1);
   }
-
   100% {
     transform: scale(1.1);
   }
@@ -124,36 +125,48 @@
     width: 0;
     left: 50%;
   }
-
   100% {
     width: 30%;
     left: 35%;
   }
 }
 
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1024px) {
+  .faculty-card {
+    width: 200px; /* Adjust width for tablets */
+    height: 200px; /* Adjust height for tablets */
+  }
+}
+
 @media (max-width: 768px) {
   .faculty-card {
-    width: 200px;
-    height: 200px;
+    width: 180px; /* Slightly smaller for small tablets */
+    height: 180px;
+  }
+
+  .section-heading {
+    font-size: 2em; /* Smaller heading for mobile */
   }
 }
 
 @media (max-width: 480px) {
   .faculty-card {
-    width: 150px;
+    width: 150px; /* Smaller for mobile */
     height: 150px;
-    margin: 15px;
+    margin: 15px; /* Reduce margin for mobile */
   }
 
-  h3 {
-    font-size: 1.2em;
+  .faculty-card-info h3 {
+    font-size: 1em; /* Smaller font for names */
   }
 
-  p {
-    font-size: 0.8em;
+  .faculty-card-info p {
+    font-size: 0.8em; /* Smaller font for descriptions */
   }
 
   .section-heading {
-    font-size: 2em;
+    font-size: 1.5em; /* Smaller heading for very small devices */
   }
 }
