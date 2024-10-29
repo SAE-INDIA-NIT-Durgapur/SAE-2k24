@@ -143,7 +143,7 @@ export const thirdYear = [
         "linkedinLink": "https://www.linkedin.com/in/rigden-bhutia-6596ba250",
     },
     {
-        "url": "https://live.staticflickr.com/65535/52965743856_eed03d89cb_w.jpg",
+        "url": require('../Assets/3rdYearImg/Rituparna Pradhan.png'),
         "name": "Rituparna Pradhan",
         "position": "Senior Coordinator",
         "instaLink": "https://instagram.com/ritu_parna8?igshid=MzNlNGNkZWQ4Mg==",
