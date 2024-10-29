@@ -1,38 +1,19 @@
-import React, { useRef, useEffect } from "react";
-import "./Event.css";
+import React from 'react'
+import './Event.css'
 
 const Event = () => {
-  const cardsRef = useRef([]);
-
-  // Update glow position on mouse move
-  const handleMouseMove = (e, index) => {
-    const card = cardsRef.current[index];
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-
-    // Update CSS variables for glow position
-    card.style.setProperty("--x", `${x}px`);
-    card.style.setProperty("--y", `${y}px`);
-  };
-
   return (
     <>
       <section className="homevents-section data">
         <div className="homhlo-sae" data-aos="fade-right">
-          <h1 className="font-bold">Events</h1>
+          <h1 className='font-bold'>Events</h1>
         </div>
       </section>
-      <section className="homevents-section-data px-6">
-        <div id="homcontainer-fluid">
-          <div
-            className="homevent-content"
-            ref={(el) => (cardsRef.current[0] = el)}
-            onMouseMove={(e) => handleMouseMove(e, 0)}
-          >
+      <section className='homevents-section-data px-4'>
+        <div className="homcontainer-fluid">
+          <div className="homevent-content">
             <div className="homfist-image">
               <img
-                className="pt-6 mx-auto"
                 src="https://i.ibb.co/m4yp2vJ/Screenshot-2024-10-28-193138.png"
                 alt="Image"
                 data-aos="fade-right"
@@ -41,30 +22,19 @@ const Event = () => {
             <div className="homabout-fist" data-aos="fade-up-left">
               <h1 data-aos="fade-right">F.I.S.T</h1>
               <p>
-                Team SAE-NITD's "Forum for Ideas on Science and Technology"
-                (F.I.S.T.) fosters a research-oriented culture through webinars
-                and workshops on advanced topics like generative AI. By inviting
-                experts, FIST bridges knowledge gaps, stimulates innovation, and
-                empowers students to develop technology-driven solutions to
-                real-world challenges.
+                Team SAE-NITD’s "Forum for Ideas on Science and Technology" (F.I.S.T.) is dedicated to cultivating a research-focused environment through engaging webinars and hands-on workshops on cutting-edge topics like generative AI. By bringing in industry experts, F.I.S.T. bridges crucial knowledge gaps, inspires innovation, and empowers students to explore and develop technology-based solutions to real-world challenges, fostering a spirit of inquiry and advancement.
               </p>
             </div>
           </div>
+        </div>
 
-          <div
-            className="homevent-content"
-            ref={(el) => (cardsRef.current[1] = el)}
-            onMouseMove={(e) => handleMouseMove(e, 1)}
-          >
+        <div className="homcontainer-fluid">
+          <div className="homevent-content">
             <div className="homabout-baja">
               <h1 data-aos="fade-left">BAJA SAEINDIA</h1>
-              <p data-aos="fade-up-right">
-                Baja SAEINDIA is a national event where university students
-                design, build, and compete with off-road vehicles, promoting
-                collaboration and engineering excellence. NIT Durgapur's Team
-                NDORS, comprising 25 students, achieved 38th position nationwide
-                and 7th position among IITs and NITs.
-              </p>
+              <p data-aos="fade-up-right">BAJA SAEINDIA is a renowned national event that challenges university students to design, build, and race off-road vehicles, promoting teamwork, innovation, and engineering skills.
+
+NIT Durgapur’s Team NDORS, made up of 25 talented students, excelled in the competition, achieving 38th place nationwide and ranking 7th among IITs and NITs, reflecting their technical expertise and dedication.</p>
             </div>
             <div className="hombaja-image">
               <img
@@ -74,35 +44,26 @@ const Event = () => {
               />
             </div>
           </div>
+        </div>
 
-          <div
-            className="homevent-content"
-            ref={(el) => (cardsRef.current[2] = el)}
-            onMouseMove={(e) => handleMouseMove(e, 2)}
-          >
-            <div className="homaiml-image">
+        <div className="homcontainer-fluid">
+          <div className="homevent-content">
+            <div className="homaiml-image mt-4">
               <img
-                className="pt-6 mx-auto"
                 src="https://github.com/Suke2004/Birthday-django-/blob/main/IMG-20240821-WA0076.jpg?raw=true"
                 alt="Image"
                 data-aos="fade-right"
               />
             </div>
-            <div className="homabout-aiml" data-aos="fade-up-left">
+            <div className="homabout-aiml">
               <h1 data-aos="fade-right">AI ML Workshop</h1>
-              <p>
-                The workshop offers participants practical experience with AI
-                and ML technologies, focusing on CNNs and deep learning models,
-                to tackle real-world challenges and acquire hands-on expertise
-                in designing neural network architectures and understanding
-                their contemporary applications.
-              </p>
+              <p data-aos="fade-up-left">This workshop provides participants with practical, in-depth experience in Artificial Intelligence (AI) and Machine Learning (ML), focusing on Convolutional Neural Networks (CNNs) and deep learning models. Attendees will tackle real-world challenges and gain hands-on expertise by designing and implementing neural network architectures. They’ll explore applications in image and speech recognition, autonomous systems, and data-driven decision-making, making it ideal for those seeking to deepen their AI and ML knowledge with an emphasis on modern solutions and industry standards.</p>
             </div>
           </div>
         </div>
-      </section>
+      </section> 
     </>
-  );
-};
+  )
+}
 
-export default Event;
+export default Event

@@ -1,12 +1,3 @@
-/* General container settings */
-#homcontainer-fluid {
-  width: 100%;
-  max-width: 1500px;
-  margin: 0 auto;
-  perspective: 1400px; 
-}
-
-/* Main header styling */
 .homhlo-sae {
   text-align: center;
   padding: 2em;
@@ -20,67 +11,48 @@
   position: relative;
 }
 
-.homhlo-sae h1::before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  color: #000;
-  z-index: -1;
+.homcontainer-fluid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* Event card styling */
-#homcontainer-fluid .homevent-content {
-  position: relative;
-  border-radius: 12px;
-  padding: 35px;
-  overflow: hidden; /* Keep the glow inside the card */
-  transition: all 0.4s ease-in-out;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  /* border: 1px solid rgba(255, 255, 255, 0.18); */
-  margin: 25px 0;
+.homevent-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: row;
-  --x: 50%; /* Initial position */
-  --y: 50%;
 }
 
-/* Outline glow effect using ::before */
-#homcontainer-fluid .homevent-content::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  border-radius: 12px;
-  pointer-events: none;
-  background: radial-gradient(circle at var(--x) var(--y), rgba(235, 21, 21, 0.7), transparent 50%);
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  padding: 2px; /* Controls the thickness of the glow outline */
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+@media (max-width: 768px) {
+  .homevent-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .homevent-content div {
+    order: 1;
+    max-width: 100%;
+  }
 }
 
-/* Show glow on hover */
-#homcontainer-fluid .homevent-content:hover::before {
-  opacity: 1;
+.homfist-image, .hombaja-image, .homaiml-image {
+  width: 450px;
 }
 
+.homfist-image img, .hombaja-image img, .homaiml-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
-/* About sections styling */
 .homabout-fist, .homabout-baja, .homabout-aiml {
-  text-align: left;
   max-width: 50%;
-  margin: 2em;
+  text-align: left;
+  margin: 20px;
 }
 
 .homabout-fist h1, .homabout-baja h1, .homabout-aiml h1 {
-  margin: 20px;
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
   color: rgb(235, 8, 8);
@@ -89,80 +61,32 @@
 }
 
 .homabout-fist p, .homabout-baja p, .homabout-aiml p {
-  margin: 20px;
   font-family: 'Poppins', sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.5;
   color: #b8bec4;
 }
 
-.homabout-fist h1::before, .homabout-baja h1::before, .homabout-aiml h1::before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  color: #000;
-  z-index: -1;
-}
-
-/* Image container styling */
-.homfist-image, .hombaja-image, .homaiml-image {
-  width: 450px;
-}
-
-.homfist-image img, .hombaja-image img, .homaiml-image img {
-  max-width: 100%;
-  display: block;
-  margin: 0 auto;
-}
-
-/* Responsive design for medium screens */
-@media (max-width: 768px) {
-  .homevent-content {
-      flex-direction: column;
-      justify-content: center;
-  }
-
-  .homabout-fist, .homabout-baja, .homabout-aiml {
-      max-width: 100%;
-      margin: 1em;
-      text-align: center;
-  }
-
-  .homabout-fist h1, .homabout-baja h1, .homabout-aiml h1 {
-      font-size: 30px;
-      text-shadow: none;
-  }
-
-  .homabout-fist p, .homabout-baja p, .homabout-aiml p {
-      font-size: 16px;
-  }
-
-  .homfist-image, .hombaja-image, .homaiml-image {
-      text-align: center;
-  }
-
-  .homfist-image img, .hombaja-image img, .homaiml-image img {
-      width: 73%;
-      height: auto;
-  }
-}
-
-/* Responsive design for small screens */
 @media (max-width: 480px) {
-  .homevent-content {
-      flex-direction: column;
-      justify-content: center;
-  }
-
-  .homabout-fist p, .homabout-baja p, .homabout-aiml p {
-      font-size: 16px;
-      margin: 2px 110px;
-      line-height: 1.4;
+  .homfist-image, .hombaja-image, .homaiml-image {
+    width: 100%;
+    margin: 0 auto;
   }
 
   .homabout-fist h1, .homabout-baja h1, .homabout-aiml h1 {
-      font-size: 30px;
-      text-shadow: none;
+    font-size: 30px;
   }
+
+  .homabout-fist p, .homabout-baja p, .homabout-aiml p {
+    font-size: 18px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+    .homabout-sae p {
+        margin: -18px;
+        font-size: 16px;
+        text-align: center;
+    }
 }

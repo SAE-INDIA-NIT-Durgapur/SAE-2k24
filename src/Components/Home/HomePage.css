@@ -510,9 +510,8 @@
   width: 100%;
   text-align: center;
   margin: 0;
-  padding: 0;
+  padding: 0 1px;
 }
-
 .homsubheading h2 {
   font-size: 2.5rem;
   color: rgb(248, 233, 233);
@@ -996,6 +995,8 @@
     text-align: center;
   }
 
+
+
   .homabout-sae h1 {
     font-weight: 800;
     font-size: 30px;
@@ -1003,9 +1004,10 @@
   }
 
   .homabout-sae p {
-    margin: 10px;
+    margin: -18px;
     font-size: 16px;
-  }
+    text-align: center;
+}
 }
 
 .homresponsive-lottie {
