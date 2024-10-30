@@ -23,7 +23,9 @@ AOS.init({
 const HomePage = () => {
   return (
     <div className="home-container">
-      <HomeCarousel />
+      {/* <HomeCarousel /> */}
+      <br />
+      <br />
       <section className="hommain">
         <div className="homheading">
           <h1 className="font-bold">SAENITD</h1>

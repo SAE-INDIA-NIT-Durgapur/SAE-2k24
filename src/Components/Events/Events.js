@@ -11,10 +11,12 @@ const Events = () => {
     <div>
       <Header/>
       <Aar/>
-      <Fist/>
+      <Sdv/>   
       <Dnd/>
-      <Sdv/>
+      <Fist/>
       <TedxSec/>
+     
+  
 
     </div>
   )
