@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import './HeaderImg.css';
 
 const images = [
-  'https://www.pittstate.edu/news/2019/images/tedx-logo-1680x680.jpg',
+  // 'https://www.pittstate.edu/news/2019/images/tedx-logo-1680x680.jpg',
   'https://i.ibb.co/7CK09nR/Whats-App-Image-2024-08-21-at-23-50-49-9d4f2cd5.jpg',
   'https://www.whiteclouds.com/wp-content/uploads/2021/10/tedx-030-letters3-600w-1.jpeg',
   'https://i.ibb.co/DYqwXcc/Whats-App-Image-2024-08-21-at-23-51-44-c685cd62.jpg'
@@ -22,7 +22,7 @@ const HeaderImg = () => {
   useEffect(() => {
     const schedule = () => {
       progress();
-      setTimeout(schedule, 4000); 
+      setTimeout(schedule, 3000); 
     };
     const timeoutId = setTimeout(schedule, 500); 
 
