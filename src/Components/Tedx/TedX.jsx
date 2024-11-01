@@ -46,8 +46,8 @@ const TedX = () => {
         <h1 className="text-[36px] md:text-[42px] font-bold text-custom-red text-center pt-8  underline-red ">SPEAKERS</h1>
         <Speakers />
  
-        <h1 className="text-[36px] md:text-[42px] font-bold text-custom-red text-center mb-8 pt-5 underline-red">ORGANISERS</h1>
-        <Organisers />
+        {/* <h1 className="text-[36px] md:text-[42px] font-bold text-custom-red text-center mb-8 pt-5 underline-red">ORGANISERS</h1>
+        <Organisers /> */}
       </div>
     </div>
   );

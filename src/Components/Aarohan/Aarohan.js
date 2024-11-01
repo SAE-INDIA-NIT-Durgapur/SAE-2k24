@@ -191,11 +191,11 @@ function Aarohan() {
      
 
       <div data-aos="fade-right">
-        <h1 className="pt-24  md:pb-24 text-center text-3xl text-[#ff0000] font-extrabold  underline">
+        <h1 className="pt-24 text-center text-3xl text-[#ff0000] font-extrabold  underline">
           AAROHAN GALLERY
         </h1>
       </div>
-      <div className="arhn-slider">
+      <div className="arhn-slider mb-48">
         <div className="arhn-slide-track">
           {arhn_gallary.map((arhn_img) => (
             <div
@@ -216,13 +216,13 @@ function Aarohan() {
         </div>
       </div>
 
-      <div data-aos="fade-right">
+      {/* <div data-aos="fade-right">
         <h1 className="py-14  md:pb-24 text-center text-3xl text-[#FF0000] font-extrabold underline">
           AAROHAN ORGANIZERS
         </h1>
       </div>
 
-      <AarohanOrg />
+      <AarohanOrg /> */}
     </>
   );
 }

@@ -50,17 +50,44 @@ NIT Durgapur’s Team NDORS, made up of 25 talented students, excelled in the co
           <div className="homevent-content">
             <div className="homaiml-image mt-4">
               <img
-                src="https://github.com/Suke2004/Birthday-django-/blob/main/IMG-20240821-WA0076.jpg?raw=true"
+                   src="./SDV.jpg" 
                 alt="Image"
                 data-aos="fade-right"
               />
             </div>
             <div className="homabout-aiml">
-              <h1 data-aos="fade-right">AI ML Workshop</h1>
-              <p data-aos="fade-up-left">This workshop provides participants with practical, in-depth experience in Artificial Intelligence (AI) and Machine Learning (ML), focusing on Convolutional Neural Networks (CNNs) and deep learning models. Attendees will tackle real-world challenges and gain hands-on expertise by designing and implementing neural network architectures. They’ll explore applications in image and speech recognition, autonomous systems, and data-driven decision-making, making it ideal for those seeking to deepen their AI and ML knowledge with an emphasis on modern solutions and industry standards.</p>
+              <h1 data-aos="fade-right">SDV Workshop</h1>
+              <p data-aos="fade-up-left">SAE’s self-driving vehicle workshop offers an in-depth experience in building a prototype autonomous vehicle, ideal for tech enthusiasts and aspiring engineers. As autonomous vehicles become central to the future of transportation, this workshop covers key principles of autonomous driving, robotics, and algorithm development. Through hands-on sessions and expert-led guidance, participants will engage with the cutting-edge technologies propelling the evolution of self-driving systems, gaining valuable insights into the innovations shaping tomorrow’s mobility landscape.</p>
             </div>
           </div>
         </div>
+
+
+      
+
+
+
+
+
+        <div className="homcontainer-fluid">
+  <div className="homevent-content homaiml-content"> {/* Added homaiml-content */}
+ 
+    <div className="homabout-aiml">
+      <h1 data-aos="fade-left">AI ML Workshop</h1>
+      <p data-aos="fade-up-right">
+        This workshop provides participants with practical, in-depth experience in Artificial Intelligence (AI) and Machine Learning (ML), focusing on Convolutional Neural Networks (CNNs) and deep learning models. Attendees will tackle real-world challenges and gain hands-on expertise by designing and implementing neural network architectures. They’ll explore applications in image and speech recognition, autonomous systems, and data-driven decision-making, making it ideal for those seeking to deepen their AI and ML knowledge with an emphasis on modern solutions and industry standards.
+      </p>
+    </div>
+    <div className="homaiml-image ">
+      <img
+        src="https://github.com/Suke2004/Birthday-django-/blob/main/IMG-20240821-WA0076.jpg?raw=true"
+        alt="Image"
+        data-aos="fade-left"
+      />
+    </div>
+  </div>
+</div>
+
       </section> 
     </>
   )

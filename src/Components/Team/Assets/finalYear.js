@@ -70,7 +70,7 @@ export const finalYear = [
         "linkedinLink": "https://www.linkedin.com/in/ambar-b9863921a/",
     },
     {
-        "url": "https://live.staticflickr.com/65535/52771163568_5dfab04825_w.jpg",
+        "url": require("./FinalYearImg/Sachin Patel.jpg"),
         "name": "Sachin Patel",
         "position": "Design Head",
         "instaLink": "https://www.instagram.com/Sachinpat_el/",

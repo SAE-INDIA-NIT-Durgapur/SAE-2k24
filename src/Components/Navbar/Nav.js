@@ -66,6 +66,7 @@ function Navbar() {
             <Link to="/tedx" className={`nav-link text-lg font-bold hover:text-custom-red ${currentPage === "/tedx" ? "active" : ""}`} onClick={() => window.scrollTo(0, 0)}>TEDX</Link>
             <Link to="/arhn" className={`nav-link text-lg font-bold hover:text-custom-red ${currentPage === "/arhn" ? "active" : ""}`} onClick={() => window.scrollTo(0, 0)}>AAROHAN</Link>
             <Link to="/alumni" className={`nav-link text-lg font-bold hover:text-custom-red ${currentPage === "/alumni" ? "active" : ""}`} onClick={() => window.scrollTo(0, 0)}>ALUMNI</Link>
+            <Link to="/autopia" className={`nav-link text-lg font-bold hover:text-custom-red ${currentPage === "/autopia" ? "active" : ""}`} onClick={() => window.scrollTo(0, 0)}>AUTOPIA</Link>
           </div>
 
           <button className="md:hidden relative z-20" onClick={toggleNavbar}>
@@ -90,6 +91,7 @@ function Navbar() {
               <Link to="/tedx" className="no-underline block text-white hover:text-custom-red text-lg font-bold transition duration-300 ease-in-out" onClick={() => window.scrollTo(0, 0)}>TEDX</Link>
               <Link to="/arhn" className="no-underline block text-white hover:text-custom-red text-lg font-bold transition duration-300 ease-in-out" onClick={() => window.scrollTo(0, 0)}>AAROHAN</Link>
               <Link to="/alumni" className="no-underline block text-white hover:text-custom-red text-lg font-bold transition duration-300 ease-in-out" onClick={() => window.scrollTo(0, 0)}>ALUMNI</Link>
+              <Link to="/autopia" className="no-underline block text-white hover:text-custom-red text-lg font-bold transition duration-300 ease-in-out" onClick={() => window.scrollTo(0, 0)}>AUTOPIA</Link>
             </div>
           </div>
         </div>
